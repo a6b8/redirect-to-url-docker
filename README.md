@@ -65,6 +65,8 @@ services:
 
 ### HA-Proxy Snippet
 ```
+version: '2'
+services:
   redirect-to-url:
     image: a6b8/redirect-to-url-docker
     environment:
