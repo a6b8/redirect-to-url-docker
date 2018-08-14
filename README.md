@@ -54,11 +54,20 @@ a6b8/redirect-to-url-docker
 ```
 version: '2'
 services:
-  redirect-to-https:
-    image: a6b8/redirect-to-https-docker
+  redirect-to-url:
+    image: a6b8/redirect-to-url-docker
+    ports:
+      - "4242:80"
+    environment:
+      - SERVER_REDIRECT_SCHEME=https
+      - SERVER_REDIRECT=www.example.com
 ```
 
 ### HA-Proxy Snippet
 ```
-
+  redirect-to-url:
+    image: a6b8/redirect-to-url-docker
+    environment:
+      - SERVER_REDIRECT_SCHEME=https
+      - SERVER_REDIRECT=www.example.com
 ```
