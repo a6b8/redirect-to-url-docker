@@ -1,4 +1,4 @@
-Docker Hub: [Pre-Build Image](https://hub.docker.com/r/a6b8/redirect-to-https-docker/)
+Docker Hub: [Pre-Build Image](https://hub.docker.com/r/a6b8/redirect-to-url-docker/)
 
 # Redirect to Url
 Redirect all Requests to a given Url
