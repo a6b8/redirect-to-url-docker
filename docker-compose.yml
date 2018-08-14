@@ -1,5 +1,5 @@
 to:
-  image: schmunk42/nginx-redirect
+  image: a6b8/redirect-to-url-docker
   ports:
     - "8888:80"
   environment:
