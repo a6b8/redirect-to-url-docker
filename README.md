@@ -51,3 +51,8 @@ services:
   redirect-to-https:
     image: a6b8/redirect-to-https-docker
 ```
+
+HA-Proxy
+```
+
+```
