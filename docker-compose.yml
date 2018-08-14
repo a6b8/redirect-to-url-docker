@@ -1,9 +1,12 @@
-to:
-  image: a6b8/redirect-to-url-docker
-  ports:
-    - "8888:80"
-  environment:
-    - SERVER_REDIRECT=www.example.com
+version: '2'
+services:
+  redirect-to-url:
+    image: a6b8/redirect-to-url-docker
+    ports:
+      - "4242:80"
+    environment:
+      - SERVER_REDIRECT_SCHEME=https
+      - SERVER_REDIRECT=www.example.com
     # optionally define path to redirect all requests
     # if not set nginx var $request_uri is used
     #- SERVER_REDIRECT_PATH=/landingpage
