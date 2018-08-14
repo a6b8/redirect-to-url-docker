@@ -1,3 +1,44 @@
+Docker Hub: [Pre-Build Image](https://hub.docker.com/r/a6b8/redirect-to-https-docker/)
+
+# Redirect to Url
+Redirect all Requests to a given Url
+
+***The Docker Image use Port:*** 80
+
+## Features
+- [x] Redirect Request
+- [x] Nginx
+- [x] Docker
+- [x] Docker-Compose
+- [x] HA-Proxy Ready
+- [x] Rancher (Cattle) Ready
+
+## Quickstart
+Docker
+```
+docker run a6b8/https-redirect-docker
+```
+
+Docker-Compose
+```
+version: '2'
+services:
+  redirect-to-https:
+    image: a6b8/redirect-to-https-docker
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 # docker-nginx-redirect
 
 A very simple container to redirect HTTP traffic to another server, based on `nginx`
