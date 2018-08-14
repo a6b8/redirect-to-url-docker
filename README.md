@@ -39,7 +39,9 @@ See also `docker-compose.yml` file.
 
 
 ## Quickstart
-Docker
+### Docker run
+- Make Port 4242 Public (-p),
+- Set Variables (-e)
 ```
 docker run  \
 -p 4242:80  \
@@ -48,7 +50,7 @@ docker run  \
 a6b8/redirect-to-url-docker
 ```
 
-Docker-Compose
+### Docker-Compose
 ```
 version: '2'
 services:
@@ -56,7 +58,7 @@ services:
     image: a6b8/redirect-to-https-docker
 ```
 
-HA-Proxy
+### HA-Proxy Snippet
 ```
 
 ```
