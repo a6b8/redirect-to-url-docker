@@ -41,7 +41,11 @@ See also `docker-compose.yml` file.
 ## Quickstart
 Docker
 ```
-
+docker run  \
+-p 4242:80  \
+-e SERVER_REDIRECT_SCHEME=https  \
+-e SERVER_REDIRECT="www.example.com"  \
+a6b8/redirect-to-url-docker
 ```
 
 Docker-Compose
